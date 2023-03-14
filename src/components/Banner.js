@@ -28,6 +28,22 @@ const Banner = () => {
               2000
             ]} speed={50} className="text-accent" wrapper="span" repeat={Infinity} />
           </div>
+          <p>something something something something something something something something something something something somethingsomething somethingsomething</p>
+          <div>
+            <button className='btn btn-lg'>Contact Me</button>
+          </div>
+          {/* socials */}
+          <div>
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaTiktok />
+            </a>
+            <a href="#">
+              <FaYoutube />
+            </a>
+          </div>
         </div>
         {/* image */}
         <div>
