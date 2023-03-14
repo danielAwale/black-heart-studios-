@@ -15,8 +15,8 @@ const Banner = () => {
     <div className='container mx-auto'>
       <div>
         {/* text */}
-        <div>
-          <h1>Kashaga</h1>
+        <div className='flex-1 text-center font-secondary lg:text-left'>
+          <h1 className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>Kashaga</h1>
           <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
             <span className='text-white mr-3'>I am a</span>
             <TypeAnimation sequence={[
@@ -47,7 +47,7 @@ const Banner = () => {
         </div>
         {/* image */}
         <div>
-          <img src={Image} alt="banner" />
+          <img src={Image} alt="banner" className='h-[800px]' />
         </div>
       </div>
     </div>
