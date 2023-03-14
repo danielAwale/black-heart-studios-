@@ -11,7 +11,23 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
 const Banner = () => {
-  return <div className='section' id='home'>Banner</div>;
+  return <section className='section' id='home'>
+    <div className='container mx-auto'>
+      <div>
+        {/* text */}
+        <div>
+          <h1>Kashaga</h1>
+          <div>
+            <span>I am a</span>
+          </div>
+        </div>
+        {/* image */}
+        <div>
+          <img src={Image} alt="banner" />
+        </div>
+      </div>
+    </div>
+  </section>;
 };
 
 export default Banner;
