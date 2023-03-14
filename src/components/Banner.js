@@ -33,7 +33,7 @@ const Banner = () => {
             <button className='btn btn-lg'>Contact Me</button>
           </div>
           {/* socials */}
-          <div>
+          <div className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
             <a href="#">
               <FaInstagram />
             </a>
