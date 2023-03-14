@@ -28,8 +28,8 @@ const Banner = () => {
               2000
             ]} speed={50} className="text-accent" wrapper="span" repeat={Infinity} />
           </div>
-          <p>something something something something something something something something something something something somethingsomething somethingsomething</p>
-          <div>
+          <p className='mb-8 max-w-lg mx-auto lg:mx-0'>something something something something something something something something something something something somethingsomething somethingsomething</p>
+          <div className='flex max-w-max gap-6 items-center mb-12 mx-auto lg:mx-0'>
             <button className='btn btn-lg'>Contact Me</button>
           </div>
           {/* socials */}
