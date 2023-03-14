@@ -11,9 +11,9 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
 const Banner = () => {
-  return <section className='section' id='home'>
+  return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
     <div className='container mx-auto'>
-      <div>
+      <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
         {/* text */}
         <div className='flex-1 text-center font-secondary lg:text-left'>
           <h1 className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>Kashaga</h1>
@@ -47,7 +47,7 @@ const Banner = () => {
         </div>
         {/* image */}
         <div>
-          <img src={Image} alt="banner" className='h-[800px]' />
+          <img src={Image} alt="banner" className='h-[700px]' />
         </div>
       </div>
     </div>
