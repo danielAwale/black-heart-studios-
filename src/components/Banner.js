@@ -17,8 +17,16 @@ const Banner = () => {
         {/* text */}
         <div>
           <h1>Kashaga</h1>
-          <div>
-            <span>I am a</span>
+          <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+            <span className='text-white mr-3'>I am a</span>
+            <TypeAnimation sequence={[
+              "Producer",
+              2000,
+              "Songwriter",
+              2000,
+              "Musician",
+              2000
+            ]} speed={50} className="text-accent" wrapper="span" repeat={Infinity} />
           </div>
         </div>
         {/* image */}
