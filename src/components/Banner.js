@@ -16,8 +16,8 @@ const Banner = () => {
       <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
         {/* text */}
         <div className='flex-1 text-center font-secondary lg:text-left'>
-          <h1 className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>Kashaga</h1>
-          <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+          <motion.h1 variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>Kashaga</motion.h1>
+          <motion.div variants={fadeIn('up', 0.4)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
             <span className='text-white mr-3'>I am a</span>
             <TypeAnimation sequence={[
               "Producer",
@@ -27,13 +27,14 @@ const Banner = () => {
               "Musician",
               2000
             ]} speed={50} className="text-accent" wrapper="span" repeat={Infinity} />
-          </div>
-          <p className='mb-8 max-w-lg mx-auto lg:mx-0'>something something something something something something something something something something something somethingsomething somethingsomething</p>
-          <div className='flex max-w-max gap-6 items-center mb-12 mx-auto lg:mx-0'>
+          </motion.div>
+          <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>Vancouver Island Music Studio
+            Recording, mixing, mastering & cover art.</motion.p>
+          <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex max-w-max gap-6 items-center mb-12 mx-auto lg:mx-0'>
             <button className='btn btn-lg'>Contact Me</button>
-          </div>
+          </motion.div>
           {/* socials */}
-          <div className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+          <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
             <a href="#">
               <FaInstagram />
             </a>
@@ -43,10 +44,10 @@ const Banner = () => {
             <a href="#">
               <FaYoutube />
             </a>
-          </div>
+          </motion.div>
         </div>
         {/* image */}
-        <div className='hidden lg:flex'>
+        <div className='hidden lg:flex mx-auto'>
           <img src={Image} alt="banner" className='h-[700px]' />
         </div>
       </div>
