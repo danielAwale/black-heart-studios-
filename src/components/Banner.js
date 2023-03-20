@@ -47,9 +47,9 @@ const Banner = () => {
           </motion.div>
         </div>
         {/* image */}
-        <div className='hidden lg:flex mx-auto'>
+        <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className='hidden lg:flex mx-auto'>
           <img src={Image} alt="banner" className='h-[700px]' />
-        </div>
+        </motion.div>
       </div>
     </div>
   </section>;
