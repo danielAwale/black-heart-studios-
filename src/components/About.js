@@ -1,7 +1,8 @@
 import React from 'react';
+//countup
 
 const About = () => {
-  return <div className='section' id='about'>About</div>;
+  return <section className='section' id='about'>About</section>;
 };
 
 export default About;
