@@ -46,7 +46,7 @@ const Banner = () => {
           </div>
         </div>
         {/* image */}
-        <div>
+        <div className='hidden lg:flex'>
           <img src={Image} alt="banner" className='h-[700px]' />
         </div>
       </div>
